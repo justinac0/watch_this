@@ -9,7 +9,7 @@ void wt_missing_callback(const char* file_name) {
 }
 
 int main(void) {
-    wtFile file = wt_file_create("main.c", wt_modified_callback, wt_missing_callback);
+    wtFile file = wt_file_create("somefile.txt", wt_modified_callback, wt_missing_callback);
 
     while (true) {
         wt_file_update(&file);
